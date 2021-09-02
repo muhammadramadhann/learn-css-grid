@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- web title -->
+    <title>Simple Grid Implementation - Jakarta Website</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="hero">
+                <h2>Jakarta.</h2>
+                <p class="sub-heading">Kenali lebih dekat</p>
+            </div>
+            <div class="features feature-one">
+                <h4 class="info">Wisata</h4>
+            </div>
+            <div class="features feature-two">
+                <h4 class="info">Transportasi</h4>
+            </div>
+        </header>
+
+        <nav class="menu" id="nav-bar">
+            <div class="toggle-menu">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <h1>Jakarta.</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Beranda</a></li>
+                <li><a href="">Tentang Jakarta</a></li>
+                <li><a href="">Telusuri Jakarta</a></li>
+                <li><a href="">Informasi Jakarta</a></li>
+            </ul>
+        </nav>
+        
+        <section class="main-information">
+            <div class="information">
+                <div class="icon">👫🏻</div>
+                <h3 class="information-title">Kependudukan</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ad numquam perspiciatis officiis est illo architecto doloremque exercitationem, repellendus voluptatibus.</p>
+            </div>
+            <div class="information">
+                <div class="icon">👨🏻‍🎓</div>
+                <h3 class="information-title">Pendidikan</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus ipsam, ab numquam eligendi saepe commodi ducimus sit corporis facilis.</p>
+            </div>
+            <div class="information">
+                <div class="icon">👨🏻‍⚕️</div>
+                <h3 class="information-title">Kesehatan</h3>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique iusto molestias repellat? Numquam, nesciunt. Optio hic sint velit mollitia.</p>
+            </div>
+            <div class="information">
+                <div class="icon">👮🏻‍♂️</div>
+                <h3 class="information-title">Keamanan</h3>
+                <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A tempora recusandae eius consequuntur ullam magnam atque consequatur cumque in sunt.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Galeri</h2>
+            <img src="img/img-gallery/1.png" alt="">
+            <img src="img/img-gallery/2.png" alt="">
+            <img src="img/img-gallery/3.png" alt="">
+            <img src="img/img-gallery/4.png" alt="">
+            <img src="img/img-gallery/5.png" alt="">
+            <img src="img/img-gallery/6.png" alt="">
+            <img src="img/img-gallery/7.png" alt="">
+            <img src="img/img-gallery/8.png" alt="">
+        </section>
+    </div>
+    <script>
+        const toggleMenu = document.querySelector(".toggle-menu input");
+        const navigation = document.querySelector("nav ul");
+
+        toggleMenu.addEventListener('click', () => {
+            navigation.classList.toggle("show-toggle-menu");
+        });
+    </script>
+</body>
+</html>
